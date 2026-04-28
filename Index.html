@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loja oficial da Atlética Derivada. Camisas, moletons e acessórios com entrega rápida.">
+  <title>Loja da Atlética Derivada</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Vista o Orgulho da <span class="highlight">Derivada</span></h1>
+      <p>Camisas, moletons e canecas oficiais. Qualidade para quem vive a atlética.</p>
+      <a href="#galeria" class="btn btn-primary">Ver Produtos</a>
+    </div>
+  </header>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section-title">Nossos Produtos</h2>
+      <div class="gallery-grid">
+        <!-- Substitua os src pelas imagens reais dos produtos -->
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/600/600?random=1" alt="Camisa oficial Derivada - frente">
+          <figcaption>Camisa Oficial</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/600/600?random=2" alt="Camisa oficial Derivada - costas">
+          <figcaption>Detalhe das Costas</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/600/600?random=3" alt="Moletom Derivada">
+          <figcaption>Moletom Frio</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/600/600?random=4" alt="Caneca Oficial">
+          <figcaption>Caneca Oficial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABELA DE MEDIDAS -->
+  <section id="medidas" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Tabela de Medidas</h2>
+      <div class="table-wrapper" role="region" aria-label="Tabela de medidas dos produtos">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Tamanho</th>
+              <th>Peito (cm)</th>
+              <th>Comprimento (cm)</th>
+              <th>Manga (cm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>P</td><td>96</td><td>68</td><td>60</td></tr>
+            <tr><td>M</td><td>102</td><td>70</td><td>62</td></tr>
+            <tr><td>G</td><td>108</td><td>72</td><td>64</td></tr>
+            <tr><td>GG</td><td>114</td><td>74</td><td>66</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">*Medidas aproximadas. Em caso de dúvida, opte por um tamanho maior.</p>
+    </div>
+  </section>
+
+  <!-- CHECKOUT WHATSAPP -->
+  <section id="checkout" class="section">
+    <div class="container checkout-box">
+      <h2>Garanta o Seu Agora</h2>
+      <p>Atendimento direto, pagamento via Pix e entrega em toda a cidade.</p>
+      <form id="whatsapp-form" class="checkout-form">
+        <label for="produto">Produto:</label>
+        <select id="produto" required>
+          <option value="Camisa Oficial">Camisa Oficial</option>
+          <option value="Moletom Frio">Moletom Frio</option>
+          <option value="Caneca Oficial">Caneca Oficial</option>
+        </select>
+
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho" required>
+          <option value="P">P</option>
+          <option value="M">M</option>
+          <option value="G">G</option>
+          <option value="GG">GG</option>
+        </select>
+
+        <button type="submit" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.59 2 2.18 6.41 2.18 11.86c0 1.74.45 3.43 1.3 4.92L2 22l5.36-1.4c1.44.78 3.07 1.19 4.68 1.19h.01c5.45 0 9.86-4.41 9.86-9.86C21.91 6.41 17.5 2 12.04 2zm0 17.9c-1.45 0-2.87-.39-4.12-1.14l-.29-.17-3.19.84.85-3.11-.19-.3a8.02 8.02 0 0 1-1.22-4.26c0-4.42 3.59-8.01 8.01-8.01 2.14 0 4.15.83 5.66 2.35 1.51 1.52 2.34 3.52 2.34 5.66 0 4.43-3.59 8.02-8.01 8.02h-.01z"/></svg>
+          Comprar via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Atlética Derivada. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
